@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Md. Arifuzzaman Shaon</title>
+  
+  <!-- Font Awesome CDN for official social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-pw5sjbCvbri9KNlq8V1UM2A3HeV6Qj6fXlYkRjEsqPbB6TPX8Gvh1R06fAq3f9Z3Ez6t+dpz8oh1K0f+Ark+Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -37,23 +41,30 @@
     }
 
     .social-icons {
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     .social-icons a {
       margin: 0 10px;
-      text-decoration: none;
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
       color: white;
-      font-size: 24px;
+      font-size: 22px;
+      border-radius: 50%;
+      background-color: #00b4d8;
       transition: 0.3s;
+      text-decoration: none;
     }
 
     .social-icons a:hover {
-      color: #00b4d8;
+      background-color: #0077b6;
     }
 
     section {
-      max-width: 900px;
+      max-width: 800px;
       margin: 50px auto;
       background: rgba(255,255,255,0.1);
       border-radius: 15px;
@@ -67,25 +78,6 @@
       margin-bottom: 20px;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      color: white;
-    }
-
-    table, th, td {
-      border: 1px solid white;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: rgba(255,255,255,0.2);
-    }
-
     .btn-group {
       text-align: center;
       margin-top: 20px;
@@ -94,11 +86,11 @@
     .btn {
       background-color: #00b4d8;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 25px;
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 10px;
+      margin: 10px;
       display: inline-block;
       transition: 0.3s;
     }
@@ -117,7 +109,8 @@
 
     @media(max-width:600px){
       header h1 { font-size:24px; }
-      .btn { padding:8px 16px; font-size:14px; margin:5px 5px; }
+      .btn { padding:8px 16px; font-size:14px; margin:5px; }
+      .social-icons a { width:35px; height:35px; line-height:35px; font-size:18px; }
     }
   </style>
 </head>
@@ -128,10 +121,13 @@
     <img src="profile.png" alt="Profile Photo">
     <h1>Md. Arifuzzaman Shaon</h1>
     <p>Welfare Officer at AMANN Bangladesh Ltd.</p>
+
+    <!-- Social Media Icons -->
     <div class="social-icons">
-      <a href="https://www.facebook.com/Md.Arifuzzamanshaon" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/arifuzzamanshaon" target="_blank">Instagram</a>
-      <a href="mailto:hr.arifuzzamanshaon@gmail.com">Email</a>
+      <a href="https://www.facebook.com/Md.Arifuzzamanshaon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/arifuzzamanshaon" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/arifuzzamanshaon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:hr.arifuzzamanshaon@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
   </header>
 
@@ -144,22 +140,11 @@
     </p>
   </section>
 
-  <!-- Education Section -->
-  <section id="education">
-    <h2>🎓 Education</h2>
-    <table>
-      <tr><th>Degree</th><th>Institute</th><th>Subject</th><th>Year</th><th>Result</th></tr>
-      <tr><td>Postgraduate Diploma (PGD)</td><td>Academy of Business Professionals</td><td>Human Resource Management</td><td>Running</td><td>-</td></tr>
-      <tr><td>MBA</td><td>Uttara University</td><td>Human Resource Management</td><td>2024</td><td>3.40 / 4.00</td></tr>
-      <tr><td>BBS</td><td>Bhawal Badre Alam Govt. College</td><td>Business Studies</td><td>2019</td><td>2.55 / 4.00</td></tr>
-      <tr><td>HSC</td><td>Dr. Adbur Razzak Municipal College</td><td>Business Studies</td><td>2016</td><td>3.50 / 5.00</td></tr>
-      <tr><td>SSC</td><td>Chaughachha Hazi Sarder Martuz Ali Secondary School</td><td>Business Studies</td><td>2014</td><td>4.13 / 5.00</td></tr>
-    </table>
-
-    <!-- Buttons side by side -->
+  <!-- Buttons Section -->
+  <section id="links">
     <div class="btn-group">
-      <a href="education.html" class="btn">View Education</a>
-      <a href="experience.html" class="btn">View Experience</a>
+      <a href="education.html" class="btn">🎓 Education</a>
+      <a href="experience.html" class="btn">💼 Work Experience</a>
     </div>
   </section>
 
