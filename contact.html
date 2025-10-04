@@ -12,35 +12,37 @@
       color: white;
       margin: 0;
       padding: 0;
-    }
-
-    /* ✅ Fixed header layout */
-    header {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap; /* allows wrapping on small screens */
-      padding: 20px 30px;
-      text-align: left;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    header h1 {
-      font-size: 26px;
-      margin: 10px 0;
-      flex: 1 1 200px;
+    header {
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
       color: #00b4d8;
     }
 
     .btn {
       background-color: #00b4d8;
       color: white;
-      padding: 10px 20px;
+      padding: 10px 25px;
       border: none;
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
       transition: background 0.3s;
-      flex-shrink: 0;
+      margin-top: 15px;
+      display: inline-block;
     }
 
     .btn:hover {
@@ -49,16 +51,34 @@
 
     section {
       max-width: 600px;
-      margin: 30px auto;
+      width: 90%;
+      margin: 20px auto;
       background: rgba(255,255,255,0.1);
       border-radius: 15px;
-      padding: 20px;
+      padding: 25px;
       text-align: left;
     }
 
-    h2 { color: #00b4d8; margin-bottom: 15px; }
+    h2 {
+      color: #00b4d8;
+      margin-bottom: 15px;
+      text-align: center;
+    }
 
-    p { line-height: 1.6; font-size: 16px; }
+    p {
+      line-height: 1.6;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    a {
+      color: #00b4d8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
 
     .social-icons {
       margin-top: 20px;
@@ -71,9 +91,11 @@
     }
 
     .social-icons img {
-      width: 28px;
-      height: 28px;
-      filter: invert(1);
+      width: 32px;
+      height: 32px;
+      background-color: white;
+      border-radius: 50%;
+      padding: 5px;
       transition: transform 0.2s;
     }
 
@@ -82,24 +104,20 @@
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: auto;
       padding: 20px;
       font-size: 14px;
       color: #ccc;
+      text-align: center;
     }
 
-    /* ✅ Mobile friendly header fix */
     @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      header h1 {
-        font-size: 22px;
+      h1 {
+        font-size: 24px;
       }
       .btn {
-        margin-top: 10px;
+        font-size: 15px;
+        padding: 8px 18px;
       }
     }
   </style>
@@ -113,9 +131,9 @@
 
   <section>
     <h2>Get in Touch</h2>
-    <p>Email: <a href="mailto:hr.arifuzzamanshaon@gmail.com" style="color:#00b4d8;">hr.arifuzzamanshaon@gmail.com</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/arifuzzamanshaon" target="_blank" style="color:#00b4d8;">@arifuzzamanshaon</a></p>
-    <p>Facebook: <a href="https://www.facebook.com/Md.Arifuzzamanshaon" target="_blank" style="color:#00b4d8;">Md. Arifuzzaman Shaon</a></p>
+    <p>Email: <a href="mailto:hr.arifuzzamanshaon@gmail.com">hr.arifuzzamanshaon@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/arifuzzamanshaon" target="_blank">@arifuzzamanshaon</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/Md.Arifuzzamanshaon" target="_blank">Md. Arifuzzaman Shaon</a></p>
 
     <div class="social-icons">
       <a href="https://www.facebook.com/Md.Arifuzzamanshaon" target="_blank">
