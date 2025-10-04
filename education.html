@@ -7,22 +7,14 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
       text-align: center;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
     }
 
-    header {
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-size: 26px;
-      margin-bottom: 10px;
-      color: #00b4d8;
-    }
+    header { padding: 40px 20px; }
+    h1 { color: #00b4d8; font-size: 26px; margin-bottom: 10px; }
 
     a.btn {
       background-color: #00b4d8;
@@ -31,12 +23,8 @@
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
     }
-
-    a.btn:hover {
-      background-color: #0077b6;
-    }
+    a.btn:hover { background-color: #0077b6; }
 
     section {
       max-width: 900px;
@@ -45,41 +33,47 @@
       border-radius: 15px;
       padding: 20px;
       text-align: left;
+      overflow-x: auto; /* For mobile horizontal scroll */
     }
 
-    h2 {
-      color: #00b4d8;
-    }
+    h2 { color: #00b4d8; margin-bottom: 15px; text-align: center; }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
+      min-width: 600px; /* To keep structure for small screens */
     }
 
     th, td {
-      border: 1px solid white;
+      border: 1px solid rgba(255, 255, 255, 0.3);
       padding: 10px;
+      text-align: center;
+      white-space: nowrap;
     }
 
     th {
       background: rgba(255,255,255,0.2);
+      color: #00b4d8;
     }
+
+    tr:nth-child(even) { background: rgba(255,255,255,0.05); }
 
     footer {
       margin-top: 40px;
       padding: 20px;
       color: #ccc;
+      font-size: 14px;
     }
 
     @media (max-width: 600px) {
+      section { padding: 10px; }
+      table { font-size: 13px; }
       h1 { font-size: 22px; }
-      th, td { font-size: 14px; padding: 8px; }
-      section { margin: 20px; padding: 15px; }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>🎓 Education - Md. Arifuzzaman Shaon</h1>
     <a href="index.html" class="btn">🏠 Back to Home</a>
@@ -89,10 +83,10 @@
     <h2>Education Details</h2>
     <table>
       <tr><th>Degree</th><th>Institute</th><th>Subject</th><th>Year</th><th>Result</th></tr>
-      <tr><td>Postgraduate Diploma (PGD)</td><td>Academy of Business Professionals</td><td>Human Resource Management</td><td>Running</td><td>-</td></tr>
-      <tr><td>MBA</td><td>Uttara University</td><td>Human Resource Management</td><td>2024</td><td>3.40 / 4.00</td></tr>
+      <tr><td>PGD</td><td>Academy of Business Professionals</td><td>HRM</td><td>Running</td><td>-</td></tr>
+      <tr><td>MBA</td><td>Uttara University</td><td>HRM</td><td>2024</td><td>3.40 / 4.00</td></tr>
       <tr><td>BBS</td><td>Bhawal Badre Alam Govt. College</td><td>Business Studies</td><td>2019</td><td>2.55 / 4.00</td></tr>
-      <tr><td>HSC</td><td>Dr. Abdur Razzak Municipal College</td><td>Business Studies</td><td>2016</td><td>3.50 / 5.00</td></tr>
+      <tr><td>HSC</td><td>Dr. Adbur Razzak Municipal College</td><td>Business Studies</td><td>2016</td><td>3.50 / 5.00</td></tr>
       <tr><td>SSC</td><td>Chaughachha Hazi Sarder Martuz Ali Secondary School</td><td>Business Studies</td><td>2014</td><td>4.13 / 5.00</td></tr>
     </table>
   </section>
