@@ -2,31 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Education - Arifuzzaman Shaon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education - Md. Arifuzzaman Shaon</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f9; }
-    .navbar { background: #222; padding: 10px; border-radius: 8px; }
-    .navbar a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    .navbar a:hover { text-decoration: underline; }
-    h1 { color: #333; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 30px;
+    }
+
+    h1 { margin: 0; font-size: 28px; }
+
+    .btn {
+      background-color: #00b4d8;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0077b6;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 30px auto;
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: left;
+    }
+
+    h2 { color: #00b4d8; margin-bottom: 15px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid white;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th { background-color: rgba(255,255,255,0.2); }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
   </style>
 </head>
 <body>
 
-  <div class="navbar">
-    <a href="index.html">🏠 Home</a>
-    <a href="education.html">🎓 Education</a>
-    <a href="contact.html">📧 Contact</a>
-  </div>
+  <header>
+    <h1>🎓 Education - Md. Arifuzzaman Shaon</h1>
+    <a href="index.html" class="btn">🏠 Back to Home</a>
+  </header>
 
-  <h1>🎓 Education Details</h1>
-  <ul>
-    <li><b>Postgraduate Diploma (PGD)</b><br> Academy of Business Professionals<br> Subject: HRM<br> Year: Running</li><br>
-    <li><b>MBA</b><br> Uttara University<br> Subject: HRM<br> Year: 2024<br> Result: 3.40/4.00</li><br>
-    <li><b>BBS</b><br> Bhawal Badre Alam Govt. College<br> Year: 2019<br> Result: 2.55/4.00</li><br>
-    <li><b>HSC</b><br> Dr. Abdur Razzak Municipal College<br> Year: 2016<br> Result: 3.50/5.00</li><br>
-    <li><b>SSC</b><br> Chaughachha Hazi Sarder Martuz Ali Secondary School<br> Year: 2014<br> Result: 4.13/5.00</li>
-  </ul>
+  <section>
+    <h2>Education Details</h2>
+    <table>
+      <tr>
+        <th>Degree</th>
+        <th>Institute</th>
+        <th>Subject</th>
+        <th>Year</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>Postgraduate Diploma (PGD)</td>
+        <td>Academy of Business Professionals</td>
+        <td>Human Resource Management</td>
+        <td>Running</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Masters of Business Administration (MBA)</td>
+        <td>Uttara University</td>
+        <td>Human Resource Management</td>
+        <td>2024</td>
+        <td>3.40 / 4.00</td>
+      </tr>
+      <tr>
+        <td>Bachelor of Business Studies (BBS)</td>
+        <td>Bhawal Badre Alam Govt. College</td>
+        <td>Business Studies</td>
+        <td>2019</td>
+        <td>2.55 / 4.00</td>
+      </tr>
+      <tr>
+        <td>Higher Secondary Certificate (HSC)</td>
+        <td>Dr. Adbur Razzak Municipal College</td>
+        <td>Business Studies</td>
+        <td>2016</td>
+        <td>3.50 / 5.00</td>
+      </tr>
+      <tr>
+        <td>Secondary School Certificate (SSC)</td>
+        <td>Chaughachha Hazi Sarder Martuz Ali Secondary School</td>
+        <td>Business Studies</td>
+        <td>2014</td>
+        <td>4.13 / 5.00</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    © 2025 Md. Arifuzzaman Shaon | All Rights Reserved
+  </footer>
 
 </body>
 </html>
