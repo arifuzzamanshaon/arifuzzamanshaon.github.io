@@ -3,78 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arifuzzaman Shaon - Portfolio</title>
+  <title>Md. Arifuzzaman Shaon</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
       margin: 0;
       padding: 0;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
     }
 
     header {
-      padding: 30px;
+      text-align: center;
+      padding: 40px 20px 20px 20px;
     }
 
-    img.profile {
+    header img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 3px solid white;
-      margin-top: 20px;
+      border: 3px solid #00b4d8;
+      object-fit: cover;
     }
 
-    h1 {
+    header h1 {
+      margin: 15px 0 5px 0;
       font-size: 28px;
-      margin: 10px 0;
     }
 
-    p.title {
-      font-size: 18px;
-      color: #a9d6e5;
-    }
-
-    .about {
-      max-width: 600px;
-      margin: 30px auto;
+    header p {
       font-size: 16px;
-      line-height: 1.6;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 10px;
+      color: #ccc;
     }
 
     .social-icons {
-      margin-top: 25px;
+      margin-top: 10px;
     }
 
     .social-icons a {
       margin: 0 10px;
-      display: inline-block;
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      transition: 0.3s;
     }
 
-    .social-icons img {
-      width: 30px;
-      height: 30px;
-      filter: invert(1);
-      transition: transform 0.2s;
+    .social-icons a:hover {
+      color: #00b4d8;
     }
 
-    .social-icons img:hover {
-      transform: scale(1.2);
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: left;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #00b4d8;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      color: white;
+    }
+
+    table, th, td {
+      border: 1px solid white;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .btn-group {
+      text-align: center;
+      margin-top: 20px;
     }
 
     .btn {
       background-color: #00b4d8;
       color: white;
       padding: 10px 20px;
-      border: none;
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
+      margin: 0 10px;
+      display: inline-block;
+      transition: 0.3s;
     }
 
     .btn:hover {
@@ -82,74 +108,67 @@
     }
 
     footer {
-      margin-top: 40px;
+      text-align: center;
+      margin-top: 50px;
       padding: 20px;
       font-size: 14px;
       color: #ccc;
+    }
+
+    @media(max-width:600px){
+      header h1 { font-size:24px; }
+      .btn { padding:8px 16px; font-size:14px; }
     }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
-    <img src="profile.png" alt="Arifuzzaman Shaon" class="profile">
-    <h1>Arifuzzaman Shaon</h1>
-    <p class="title">Welfare Officer | AMANN Bangladesh Ltd.</p>
+    <img src="profile.png" alt="Profile Photo">
+    <h1>Md. Arifuzzaman Shaon</h1>
+    <p>Welfare Officer at AMANN Bangladesh Ltd.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/Md.Arifuzzamanshaon" target="_blank">📘</a>
+      <a href="https://www.instagram.com/arifuzzamanshaon" target="_blank">📸</a>
+      <a href="mailto:hr.arifuzzamanshaon@gmail.com">✉️</a>
+    </div>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate professional with a strong background in Human Resource Management.
-      Currently working at AMANN Bangladesh Ltd., I believe in continuous learning,
-      teamwork, and leadership through empathy. I always try to blend people skills
-      with organizational development to create a positive work culture.
-    </p>
+  <!-- Education Section -->
+  <section id="education">
+    <h2>🎓 Education</h2>
+    <table>
+      <tr><th>Degree</th><th>Institute</th><th>Subject</th><th>Year</th><th>Result</th></tr>
+      <tr><td>Postgraduate Diploma (PGD)</td><td>Academy of Business Professionals</td><td>Human Resource Management</td><td>Running</td><td>-</td></tr>
+      <tr><td>MBA</td><td>Uttara University</td><td>Human Resource Management</td><td>2024</td><td>3.40 / 4.00</td></tr>
+      <tr><td>BBS</td><td>Bhawal Badre Alam Govt. College</td><td>Business Studies</td><td>2019</td><td>2.55 / 4.00</td></tr>
+      <tr><td>HSC</td><td>Dr. Adbur Razzak Municipal College</td><td>Business Studies</td><td>2016</td><td>3.50 / 5.00</td></tr>
+      <tr><td>SSC</td><td>Chaughachha Hazi Sarder Martuz Ali Secondary School</td><td>Business Studies</td><td>2014</td><td>4.13 / 5.00</td></tr>
+    </table>
+    <div class="btn-group">
+      <a href="education.html" class="btn">View Education</a>
+      <a href="experience.html" class="btn">View Experience</a>
+    </div>
   </section>
-  <br>
-  <a href="education.html" class="btn">🎓 View Education Details</a>
-<section id="work-experience" style="max-width: 900px; margin: 50px auto; background: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; text-align: left;">
-  <h2 style="text-align:center; color:#00b4d8;">💼 Work Experience</h2>
-  
-  <!-- Short Summary -->
-  <p style="font-size:16px; color:white; text-align:center;">
-    Shaon has professional experience in two key roles:
-  </p>
-  
-  <ul style="color:white; font-size:15px; max-width:600px; margin:0 auto; line-height:1.6;">
-    <li>Contractual Employee Supervisor at ABID Enterprise (Dec 2016 – June 2025)</li>
-    <li>Welfare Officer at AMANN Bangladesh Ltd. (July 2025 – Present)</li>
-  </ul>
 
-  <!-- Button to full experience page -->
-  <div style="text-align:center; margin-top:20px;">
-    <a href="experience.html" style="background-color:#00b4d8; color:white; padding:10px 20px; border-radius:25px; text-decoration:none; font-weight:bold;">View More</a>
-  </div>
-</section>
+  <!-- Work Experience Section (short summary, optional) -->
+  <section id="work-experience">
+    <h2>💼 Work Experience</h2>
+    <p style="text-align:center;">Shaon has professional experience in two key roles:</p>
+    <ul style="color:white; font-size:15px; max-width:600px; margin:0 auto; line-height:1.6;">
+      <li>Contractual Employee Supervisor at ABID Enterprise (Dec 2016 – June 2025)</li>
+      <li>Welfare Officer at AMANN Bangladesh Ltd. (July 2025 – Present)</li>
+    </ul>
+  </section>
 
-  
-  <div class="social-icons">
-    <a href="https://www.facebook.com/Md.Arifuzzamanshaon" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
-    </a>
-    <a href="https://www.linkedin.com/in/arifuzzamanshaon" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
-    </a>
-    <a href="https://about.me/arifuzzamanshaon" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/aboutdotme.svg" alt="About.me">
-    </a>
-    <a href="https://www.instagram.com/arifuzzamanshaon" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
-    </a>
-    <a href="mailto:hr.arifuzzamanshaon@gmail.com">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email">
-    </a>
-  </div>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>📞 Contact</h2>
+    <p style="text-align:center;">Email: <a href="mailto:hr.arifuzzamanshaon@gmail.com" style="color:#00b4d8;">hr.arifuzzamanshaon@gmail.com</a></p>
+  </section>
 
-
-  <footer>
-    © 2025 Arifuzzaman Shaon | All Rights Reserved
-  </footer>
+  <footer>© 2025 Md. Arifuzzaman Shaon | All Rights Reserved</footer>
 
 </body>
 </html>
