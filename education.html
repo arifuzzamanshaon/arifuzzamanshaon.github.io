@@ -15,7 +15,7 @@
     }
 
     header {
-      padding: 30px;
+      padding: 30px 20px 50px 20px;
     }
 
     h1 { margin: 0; font-size: 28px; }
@@ -29,11 +29,11 @@
       text-decoration: none;
       font-weight: bold;
       transition: background 0.3s;
+      display: inline-block;
+      margin-top: 20px; /* spacing fix */
     }
 
-    .btn:hover {
-      background-color: #0077b6;
-    }
+    .btn:hover { background-color: #0077b6; }
 
     section {
       max-width: 800px;
@@ -52,85 +52,40 @@
       margin-top: 10px;
     }
 
-    table, th, td {
-      border: 1px solid white;
-    }
+    table, th, td { border: 1px solid white; }
 
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
+    th, td { padding: 10px; text-align: left; }
 
     th { background-color: rgba(255,255,255,0.2); }
 
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 14px;
-      color: #ccc;
-    }
+    footer { margin-top: 40px; padding: 20px; font-size: 14px; color: #ccc; }
 
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      .btn { padding: 8px 16px; font-size: 14px; }
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>🎓 Education - Md. Arifuzzaman Shaon</h1>
-    
     <a href="index.html" class="btn">🏠 Back to Home</a>
   </header>
-<section>
+
   <section>
     <h2>Education Details</h2>
     <table>
-      <tr>
-        <th>Degree</th>
-        <th>Institute</th>
-        <th>Subject</th>
-        <th>Year</th>
-        <th>Result</th>
-      </tr>
-      <tr>
-        <td>Postgraduate Diploma (PGD)</td>
-        <td>Academy of Business Professionals</td>
-        <td>Human Resource Management</td>
-        <td>Running</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Masters of Business Administration (MBA)</td>
-        <td>Uttara University</td>
-        <td>Human Resource Management</td>
-        <td>2024</td>
-        <td>3.40 / 4.00</td>
-      </tr>
-      <tr>
-        <td>Bachelor of Business Studies (BBS)</td>
-        <td>Bhawal Badre Alam Govt. College</td>
-        <td>Business Studies</td>
-        <td>2019</td>
-        <td>2.55 / 4.00</td>
-      </tr>
-      <tr>
-        <td>Higher Secondary Certificate (HSC)</td>
-        <td>Dr. Adbur Razzak Municipal College</td>
-        <td>Business Studies</td>
-        <td>2016</td>
-        <td>3.50 / 5.00</td>
-      </tr>
-      <tr>
-        <td>Secondary School Certificate (SSC)</td>
-        <td>Chaughachha Hazi Sarder Martuz Ali Secondary School</td>
-        <td>Business Studies</td>
-        <td>2014</td>
-        <td>4.13 / 5.00</td>
-      </tr>
+      <tr><th>Degree</th><th>Institute</th><th>Subject</th><th>Year</th><th>Result</th></tr>
+      <tr><td>Postgraduate Diploma (PGD)</td><td>Academy of Business Professionals</td><td>Human Resource Management</td><td>Running</td><td>-</td></tr>
+      <tr><td>Masters of Business Administration (MBA)</td><td>Uttara University</td><td>Human Resource Management</td><td>2024</td><td>3.40 / 4.00</td></tr>
+      <tr><td>Bachelor of Business Studies (BBS)</td><td>Bhawal Badre Alam Govt. College</td><td>Business Studies</td><td>2019</td><td>2.55 / 4.00</td></tr>
+      <tr><td>Higher Secondary Certificate (HSC)</td><td>Dr. Adbur Razzak Municipal College</td><td>Business Studies</td><td>2016</td><td>3.50 / 5.00</td></tr>
+      <tr><td>Secondary School Certificate (SSC)</td><td>Chaughachha Hazi Sarder Martuz Ali Secondary School</td><td>Business Studies</td><td>2014</td><td>4.13 / 5.00</td></tr>
     </table>
   </section>
 
-  <footer>
-    © 2025 Md. Arifuzzaman Shaon | All Rights Reserved
-  </footer>
+  <footer>© 2025 Md. Arifuzzaman Shaon | All Rights Reserved</footer>
 
 </body>
 </html>
