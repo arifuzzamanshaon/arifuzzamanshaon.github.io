@@ -1,160 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arifuzzaman Shaon - Portfolio</title>
+  <meta name="description" content="Portfolio of Arifuzzaman Shaon – Welfare Officer | PGD-HRM | MBA-HRM" />
+
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
+    :root{
+      --primary:#00b4d8;
+      --primary-dark:#0077b6;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.80);
     }
 
-    header {
-      padding: 40px 20px;
+    *{ box-sizing:border-box; margin:0; padding:0; }
+
+    body{
+      font-family:"Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+      min-height:100vh;
+      color:var(--text);
+      text-align:center;
+      background:linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      display:flex;
+      flex-direction:column;
     }
 
-    header h1 {
-      font-size: 28px;
-      margin: 10px 0;
+    /* Layout containers */
+    header, main, footer{
+      width:100%;
+      max-width:980px;
+      margin:0 auto;
+      padding-left:18px;
+      padding-right:18px;
     }
 
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #00b4d8;
+    header{ padding-top:40px; padding-bottom:18px; }
+
+    .profile-img{
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid var(--primary);
+      box-shadow:0 10px 25px rgba(0,0,0,.35);
+    }
+
+    h1{
+      margin-top:14px;
+      font-size:28px;
+      letter-spacing:.3px;
+    }
+
+    .subtitle{
+      margin-top:6px;
+      font-size:14.5px;
+      line-height:1.45;
+      color:var(--muted);
     }
 
     /* Social Icons */
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin: 20px 0;
-      flex-wrap: wrap;
+    .social-icons{
+      display:flex;
+      justify-content:center;
+      gap:14px;
+      margin:22px 0 12px;
+      flex-wrap:wrap;
     }
 
-    .social-icons a {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: transform 0.3s, background 0.3s;
+    .social-icons a{
+      width:44px;
+      height:44px;
+      border-radius:50%;
+      background:#fff;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      transition:transform .2s ease, background .2s ease;
     }
 
-    .social-icons a:hover {
-      transform: scale(1.1);
-      background-color: #00b4d8;
+    .social-icons a:hover{
+      transform:translateY(-2px);
+      background:var(--primary);
     }
 
-    .social-icons img {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
+    .social-icons img{
+      width:22px;
+      height:22px;
+      /* Simple-icons are black; keep black on white */
+      filter:none;
+    }
+
+    .social-icons a:hover img{
+      /* Make icon white on blue background */
+      filter:invert(1);
     }
 
     /* Buttons */
-    .btn-container {
-      margin: 25px;
+    .btn-container{ margin:18px 0 6px; }
+
+    .btn{
+      display:inline-block;
+      margin:8px 7px;
+      padding:12px 22px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:700;
+      font-size:14px;
+      color:#fff;
+      background:var(--primary);
+      transition:background .2s ease, transform .2s ease, box-shadow .2s ease;
+      box-shadow:0 8px 18px rgba(0,0,0,.25);
     }
 
-    .btn {
-      background-color: #00b4d8;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 10px;
-      display: inline-block;
-      transition: background 0.3s;
+    .btn:hover{
+      background:var(--primary-dark);
+      transform:translateY(-1px);
+      box-shadow:0 10px 22px rgba(0,0,0,.30);
     }
 
-    .btn:hover {
-      background-color: #0077b6;
+    /* Main content - NO BOX / NO CARD */
+    main{
+      flex:1;
+      padding-top:18px;
+      padding-bottom:24px;
     }
 
-    section {
-      max-width: 850px;
-      margin: 30px auto;
-      background: rgba(255,255,255,0.1);
-      border-radius: 15px;
-      padding: 20px;
-      text-align: left;
+    section{
+      text-align:left;
+      max-width:850px;
+      margin:0 auto;
+      padding:0;          /* no “boxy” padding background */
+      background:none;    /* remove card background */
+      border:none;        /* remove border */
+      box-shadow:none;    /* remove shadow */
+      border-radius:0;    /* remove rounded edges */
     }
 
-    h2 {
-      color: #00b4d8;
+    h2{
+      color:var(--primary);
+      font-size:22px;
+      margin-bottom:10px;
+      border-bottom:1px solid rgba(255,255,255,.18);
+      padding-bottom:8px;
     }
 
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 14px;
-      color: #ccc;
+    section p{
+      font-size:15px;
+      line-height:1.7;
+      color:rgba(255,255,255,.92);
+      margin-top:10px;
     }
 
-    @media (max-width: 600px) {
-      header h1 { font-size: 22px; }
-      .btn { padding: 10px 18px; font-size: 14px; }
-      .social-icons a { width: 40px; height: 40px; }
+    footer{
+      padding:16px 18px 22px;
+      font-size:13px;
+      color:rgba(255,255,255,.65);
+    }
+
+    @media (max-width:600px){
+      header{ padding-top:28px; }
+      h1{ font-size:22px; }
+      .subtitle{ font-size:13px; }
+      .btn{ padding:10px 16px; font-size:13px; margin:6px 5px; }
+      section{ text-align:left; }
     }
   </style>
 </head>
+
 <body>
-
   <header>
-    <img src="profile.png" alt="Profile Photo" class="profile-img">
-    <h1>Arifuzzaman Shaon</h1>
-    <p>Welfare Officer | PGD-HRM | MBA-HRM | Dighalsingha,Chowgacha,Chowgacha,Jessore.</p>
+    <!-- Put profile.png in the same folder as this index.html -->
+    <img src="profile.png" alt="Portrait of Arifuzzaman Shaon" class="profile-img" />
 
-    <!-- Social Media Icons (SVG CDN version) -->
+    <h1>Arifuzzaman Shaon</h1>
+    <p class="subtitle">
+      Welfare Officer | PGD-HRM | MBA-HRM<br />
+      Dighalsingha, Chowgacha, Jashore, Bangladesh
+    </p>
+
     <div class="social-icons">
-      <a href="https://www.facebook.com/thearifuzzamanshaon" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      <a href="https://www.facebook.com/thearifuzzamanshaon" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
       </a>
-      <a href="https://www.instagram.com/arifuzzamanshaon" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+
+      <a href="https://www.instagram.com/arifuzzamanshaon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
       </a>
-      <a href="https://www.linkedin.com/in/arifuzzamanshaon" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+
+      <a href="https://www.linkedin.com/in/arifuzzamanshaon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
       </a>
-      <a href="https://about.me/arifuzzamanshaon" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/aboutdotme.svg" alt="About.me">
+
+      <a href="https://about.me/arifuzzamanshaon" target="_blank" rel="noopener noreferrer" aria-label="About.me">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/aboutdotme.svg" alt="About.me" />
       </a>
-      <a href="mailto:hr.arifuzzamanshaon@gmail.com">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail">
+
+      <a href="mailto:hr.arifuzzamanshaon@gmail.com" aria-label="Email">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" />
       </a>
     </div>
 
     <div class="btn-container">
-      <a href="education.html" class="btn">🎓 Education</a>
-      <a href="experience.html" class="btn">💼 Experience</a>
-      <a href="contact.html" class="btn">📞 Contact</a>
+      <a href="education.html" class="btn">Education</a>
+      <a href="experience.html" class="btn">Experience</a>
+      <a href="contact.html" class="btn">Contact</a>
     </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am Arifuzzaman Shaon, a passionate HR professional currently working as a Welfare Officer 
-      at AMANN Bangladesh Ltd. With a strong background in Human Resource Management, 
-      I focus on employee relations, Salary Payment Administration, Employee Supervision and ensuring a healthy workplace environment.
-      My vision is to grow as a skilled HR leader who creates value through dedication and empathy.
-    </p>
-  </section>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am Arifuzzaman Shaon, a dedicated HR professional currently working as a Welfare Officer
+        at AMANN Bangladesh Ltd. I have completed PGD-HRM and an MBA in HRM, and I am passionate about
+        employee welfare and organizational development.
+      </p>
+      <p>
+        My work focuses on employee relations, salary payment administration, employee supervision,
+        and ensuring a safe, fair, and healthy workplace environment. My vision is to grow as a strategic
+        HR leader who creates value for both employees and the organization.
+      </p>
+    </section>
+  </main>
 
   <footer>© 2026 Arifuzzaman Shaon | All Rights Reserved</footer>
-
 </body>
 </html>
